@@ -1,24 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X &amp; Os" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7t-0m-53c">
+                                <rect key="frame" x="154.5" y="76" width="105" height="37"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="OBp-Uo-lsE">
+                                <rect key="frame" x="20" y="261" width="374" height="374"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="g9R-qD-deP">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="123.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60y-DM-xBi" customClass="BlockView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="123.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjn-9r-zJX" customClass="BlockView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="125.5" y="0.0" width="123" height="123.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4T-iY-Z7W" customClass="BlockView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="250.5" y="0.0" width="123.5" height="123.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="g9R-qD-deP" secondAttribute="height" multiplier="3:1" constant="4" id="UtZ-Ty-8tb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lZT-PU-uXs">
+                                        <rect key="frame" x="0.0" y="125.5" width="374" height="123"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOR-E7-Ldm" customClass="BlockView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="123"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohm-Ec-ZOD" customClass="BlockView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="125.5" y="0.0" width="123" height="123"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="il5-kE-MaT" customClass="BlockView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="250.5" y="0.0" width="123.5" height="123"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zTS-P5-4Ho">
+                                        <rect key="frame" x="0.0" y="250.5" width="374" height="123.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqq-KG-6Mm" customClass="BlockView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="123.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTW-Gk-nRP" customClass="BlockView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="125.5" y="0.0" width="123" height="123.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fv-Rs-tir" customClass="BlockView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="250.5" y="0.0" width="123.5" height="123.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zTS-P5-4Ho" firstAttribute="height" secondItem="lZT-PU-uXs" secondAttribute="height" id="LXH-cW-eEe"/>
+                                    <constraint firstItem="lZT-PU-uXs" firstAttribute="height" secondItem="g9R-qD-deP" secondAttribute="height" id="xHQ-9K-e0s"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GR0-mI-Wb0">
+                                <rect key="frame" x="20" y="655" width="396" height="187"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5i8-1J-Zzy">
+                                        <rect key="frame" x="141.5" y="35.5" width="113.5" height="116.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-nh-FQA">
+                                                <rect key="frame" x="31" y="0.0" width="51.5" height="86"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="72"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOW PLAYING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkB-Yb-D1M">
+                                                <rect key="frame" x="0.0" y="96" width="113.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5i8-1J-Zzy" firstAttribute="centerY" secondItem="GR0-mI-Wb0" secondAttribute="centerY" id="6Sr-9H-6w2"/>
+                                    <constraint firstItem="5i8-1J-Zzy" firstAttribute="centerX" secondItem="GR0-mI-Wb0" secondAttribute="centerX" id="hmk-lu-FzD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OBp-Uo-lsE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2J3-kd-SNZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OBp-Uo-lsE" secondAttribute="trailing" constant="20" id="Fu6-4Y-HEA"/>
+                            <constraint firstItem="OBp-Uo-lsE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HeT-nh-KiV"/>
+                            <constraint firstItem="OBp-Uo-lsE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LaY-A6-lt8"/>
+                            <constraint firstItem="GR0-mI-Wb0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R1D-6e-TKb"/>
+                            <constraint firstItem="GR0-mI-Wb0" firstAttribute="top" secondItem="OBp-Uo-lsE" secondAttribute="bottom" constant="20" id="VMS-cE-OZ4"/>
+                            <constraint firstItem="i7t-0m-53c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="ZQP-bZ-ZUR"/>
+                            <constraint firstItem="GR0-mI-Wb0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="2" id="lKS-mg-7d4"/>
+                            <constraint firstItem="i7t-0m-53c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xs7-wQ-0IM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GR0-mI-Wb0" secondAttribute="bottom" constant="20" id="zWj-ny-wX7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="block00" destination="60y-DM-xBi" id="x3V-bS-cBS"/>
+                        <outlet property="block01" destination="Pjn-9r-zJX" id="E43-I6-TeU"/>
+                        <outlet property="block02" destination="Q4T-iY-Z7W" id="Gny-yW-Me3"/>
+                        <outlet property="block10" destination="dOR-E7-Ldm" id="HNx-da-2li"/>
+                        <outlet property="block11" destination="ohm-Ec-ZOD" id="M5I-g2-dCf"/>
+                        <outlet property="block12" destination="il5-kE-MaT" id="yLf-Iu-fuD"/>
+                        <outlet property="block20" destination="kqq-KG-6Mm" id="6Kv-df-TzQ"/>
+                        <outlet property="block21" destination="MTW-Gk-nRP" id="kge-y1-m0i"/>
+                        <outlet property="block22" destination="5Fv-Rs-tir" id="9Xg-gw-kMa"/>
+                        <outlet property="nowPlayingLabel" destination="n6U-nh-FQA" id="ezd-xN-y7e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="103" y="84"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
