@@ -17,7 +17,9 @@ enum XO: String {
 class BlockView: UIView {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Helvetica-Bold", size: 32)
+        label.font = UIFont(name: "Chalkduster", size: 64)
+        label.minimumScaleFactor = 0.5
+        label.textColor = .label
         
         label.translatesAutoresizingMaskIntoConstraints = false
         addSubview(label)
@@ -46,6 +48,8 @@ class BlockView: UIView {
     }
     
     private func setupUI() {
+        backgroundColor = .systemBackground
+        layer.cornerRadius = 10.0
         titleLabel.text = ""
         
         addGestureRecognizer(
@@ -56,6 +60,16 @@ class BlockView: UIView {
     func set(xo: XO) {
         titleLabel.text = xo.rawValue
         placement = xo
+    }
+    
+    func mark() {
+        self.titleLabel.textColor = .red
+    }
+    
+    func reset() {
+        placement = .none
+        titleLabel.text = placement.rawValue
+        titleLabel.textColor = .label
     }
     
     func isEmpty() -> Bool {

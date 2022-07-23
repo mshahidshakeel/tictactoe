@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C93CCAA285DFD0600F74EFF /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C93CCA9285DFD0600F74EFF /* SwitchCell.swift */; };
+		5C93CCAC285DFDAC00F74EFF /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C93CCAB285DFDAC00F74EFF /* UITableViewCellExtension.swift */; };
+		5C93CCAE285DFE2B00F74EFF /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C93CCAD285DFE2B00F74EFF /* SettingsVC.swift */; };
+		5C93CCC8285E412C00F74EFF /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C93CCC7285E412C00F74EFF /* Defaults.swift */; };
+		5C93CCCA285E497B00F74EFF /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C93CCC9285E497B00F74EFF /* CALayerExtension.swift */; };
 		5C96EDB8284C91C40067E177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C96EDB7284C91C40067E177 /* AppDelegate.swift */; };
 		5C96EDBC284C91C40067E177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C96EDBB284C91C40067E177 /* ViewController.swift */; };
 		5C96EDBF284C91C40067E177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C96EDBD284C91C40067E177 /* Main.storyboard */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C93CCA9285DFD0600F74EFF /* SwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		5C93CCAB285DFDAC00F74EFF /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		5C93CCAD285DFE2B00F74EFF /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		5C93CCC7285E412C00F74EFF /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		5C93CCC9285E497B00F74EFF /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		5C96EDB4284C91C40067E177 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C96EDB7284C91C40067E177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C96EDBB284C91C40067E177 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +66,7 @@
 		5C96EDB6284C91C40067E177 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				5C93CCC9285E497B00F74EFF /* CALayerExtension.swift */,
 				5C96EDB7284C91C40067E177 /* AppDelegate.swift */,
 				5C96EDBB284C91C40067E177 /* ViewController.swift */,
 				5C96EDCB284C98390067E177 /* BlockView.swift */,
@@ -63,6 +74,10 @@
 				5C96EDC0284C91C80067E177 /* Assets.xcassets */,
 				5C96EDC2284C91C80067E177 /* LaunchScreen.storyboard */,
 				5C96EDC5284C91C80067E177 /* Info.plist */,
+				5C93CCA9285DFD0600F74EFF /* SwitchCell.swift */,
+				5C93CCAB285DFDAC00F74EFF /* UITableViewCellExtension.swift */,
+				5C93CCAD285DFE2B00F74EFF /* SettingsVC.swift */,
+				5C93CCC7285E412C00F74EFF /* Defaults.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -139,8 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C96EDBC284C91C40067E177 /* ViewController.swift in Sources */,
+				5C93CCC8285E412C00F74EFF /* Defaults.swift in Sources */,
+				5C93CCAA285DFD0600F74EFF /* SwitchCell.swift in Sources */,
+				5C93CCAC285DFDAC00F74EFF /* UITableViewCellExtension.swift in Sources */,
 				5C96EDCC284C98390067E177 /* BlockView.swift in Sources */,
 				5C96EDB8284C91C40067E177 /* AppDelegate.swift in Sources */,
+				5C93CCAE285DFE2B00F74EFF /* SettingsVC.swift in Sources */,
+				5C93CCCA285E497B00F74EFF /* CALayerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
